@@ -159,7 +159,7 @@ struct ContentView: View {
             playSound(soundName: "word-not-guessed")
         } else {
             //TODO: Redo this with LocalizedStringKey & Inflect
-            gameStatusMessage = "You've Made \(lettersGuessed.count) Guesse\(lettersGuessed.count == 1 ? "" : "es")"
+            gameStatusMessage = "You've Made \(lettersGuessed.count) Guess\(lettersGuessed.count == 1 ? "" : "es")"
         }
         if currentWordIndex == wordsToGuess.count{
             gameStatusMessage = gameStatusMessage + "\nYou've Tried All of The Words. Restart from the Beginning?"
